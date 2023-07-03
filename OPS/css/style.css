@@ -3,6 +3,15 @@
   src: url(../fonts/Tera-Regular.woff2);
 }
 
+@font-face {
+  font-family: "Noto Serif Ethiopic";
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@100;200;300;400;500;600;700;800;900&display=swap");
+}
+
+/* <style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style> */
+
 /* BB eBooks BoilerPlate EPUB */
 
 /* Modify as Needed */
@@ -12,17 +21,6 @@
 /* visit us @ http://bbebooksthailand.com/developers.html */
 
 /* This adds margins around every page to stop ADE's line numbers from being superimposed over content  */
-
-/* @font-face {
-  font-family: "Noto Serif Ethiopic";
-  font-weight: normal;
-  font-style: normal;
-  src: url(../fonts/NotoSerifEthiopic-Medium.ttf);
-} */
-
-@page {
-  margin: 10px;
-}
 
 /*===Reset code to prevent cross-reader strangeness===*/
 
@@ -134,10 +132,27 @@ dd {
 
 /* Text alignment is still a matter of debate. Feel free to change to text-align: left; */
 
+:root {
+  --root-container-margin-top: 8vh; /* epub-container */
+  --default-font: "Noto Serif Ethiopic", serif;
+  --margin: 2em;
+  --margin12: 1.5em;
+  --margin-small: calc(var(--margin) / 2);
+  --paragraph-text-indent: 30pt;
+  --paragraph-indent: 2em;
+  --line-height: 1.5em;
+  --first-verse-indent: 1.25em;
+  --chapter-font: "Tera-Regular";
+  --chapter-font-size: 1.75em;
+
+  --heading-font-size: 2.5em; /*h1*/
+  --heading-margin-top: 50px; /*h1*/
+}
+
 body {
   text-align: justify;
-  /* font-family: "Noto Serif Ethiopic"; */
-  /* line-height: 120%; */
+  font-family: var(--default-font);
+  line-height: 120%;
 }
 
 /*===Headings===*/
@@ -147,8 +162,8 @@ body {
 h1 {
   text-indent: 0;
   text-align: center;
-  margin: 50px 0 0 0;
-  font-size: 2.5em;
+  margin: var(--heading-margin-top) 0 0 0;
+  font-size: var(--heading-font-size);
   font-weight: bold;
   page-break-before: always;
   line-height: 150%;
@@ -414,28 +429,18 @@ div.blockquote {
 /*==eBook Specific Formatting Below Here==*/
 
 .chapter {
-  font-size: 1.75em;
-  font-family: "Tera-Regular";
-}
-
-.chapter-heading {
-  font-size: 1.1em;
-  font-weight: 400;
-  margin-bottom: 0.75em;
+  font-size: var(--chapter-font-size);
+  font-family: var(--chapter-font);
 }
 
 p.first-verse {
   display: inline;
-  text-indent: 1.25em;
+  text-indent: var(--first-verse-indent);
 }
 
 .verse {
   display: inline;
-  line-height: 1.5em;
-}
-
-.book {
-  color: tomato;
+  line-height: var(--line-height);
 }
 
 .poetic .verse-text::after {
@@ -444,7 +449,7 @@ p.first-verse {
 }
 
 .poetic .verse-text:nth-child(n + 3) {
-  margin-left: 16px;
+  margin-left: var(--margin);
 }
 
 #tocbody > a {
@@ -453,29 +458,18 @@ p.first-verse {
 
 .epub-container {
   overflow-anchor: none !important;
-  margin-top: 8vh;
+  margin-top: var(--root-container-margin-top);
 }
 
 .paragraph-heading {
-  margin: 16px 8px;
+  margin: var(--margin) var(--margin-small);
 }
 
 .paragraph {
-  /* padding-left: 32px; */
-  margin-top: 12px;
-  text-indent: 30pt;
+  margin-top: var(--margin12);
+  text-indent: var(--paragraph-text-indent);
 }
 
 .paragraph .verse-num {
-  margin-left: 40px;
+  margin-left: var(--paragraph-indent);
 }
-
-.chapter::before {
-  /* content: url(../chapter.png); */
-  /* white-space: pre; */
-}
-
-/* .paragraph::before {
-  content: "\A";
-  white-space: pre;
-} */
