@@ -1,2 +1,3 @@
 # bible-epub
-Amharic Bible EPUB (OPF) files 
+
+Amharic Bible EPUB (OPF) files
