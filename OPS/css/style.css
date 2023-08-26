@@ -3,10 +3,10 @@
   src: url(../fonts/Tera-Regular.woff2);
 }
 
-@font-face {
+/* @font-face {
   font-family: "Noto Serif Ethiopic";
   src: url("https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@100;200;300;400;500;600;700;800;900&display=swap");
-}
+} */
 
 /* <style>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -140,7 +140,7 @@ dd {
   --margin-small: calc(var(--margin) / 2);
   --paragraph-text-indent: 30pt;
   --paragraph-indent: 2em;
-  --line-height: 1.5em;
+  --line-height: 150%;
   --first-verse-indent: 1.25em;
   --chapter-font: "Tera-Regular";
   --chapter-font-size: 1.75em;
