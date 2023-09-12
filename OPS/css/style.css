@@ -441,6 +441,11 @@ p.first-verse {
 .verse {
   display: inline;
   line-height: var(--line-height);
+  overflow-wrap: break-word;
+}
+
+.verse-text {
+  overflow-wrap: break-word;
 }
 
 .poetic .verse-text::after {
@@ -448,9 +453,9 @@ p.first-verse {
   white-space: pre;
 }
 
-.poetic .verse-text:nth-child(n + 3) {
+/* .poetic .verse-text:nth-child(n + 3) {
   margin-left: var(--margin);
-}
+} */
 
 #tocbody > a {
   text-decoration: none;
@@ -472,4 +477,75 @@ p.first-verse {
 
 .paragraph .verse-num {
   margin-left: var(--paragraph-indent);
+}
+
+/*****  styles for poetic sections  ************************/
+
+.verse {
+  display: inline;
+  line-height: 150%;
+  overflow-wrap: break-word;
+}
+
+.verse-text {
+  overflow-wrap: break-word;
+}
+
+.poetic {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.verse-lines {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.first-verse {
+  transform: translate(-16px, 0);
+}
+
+.chapter {
+  text-align: left;
+}
+
+.chapter:not(h2) {
+  font-size: 1.84em;
+}
+
+.poetic .verse-num {
+  width: 32px;
+  display: inline-block;
+  /* font-size: 10.5vw; */
+}
+
+.verse-num {
+  /* color: var(--verse-number-color); */
+  color: rgb(6, 78, 185);
+}
+
+.paragraph-heading {
+  opacity: 0.7;
+}
+
+.poetic .verse-text::after {
+  content: "\A";
+  white-space: pre;
+}
+
+.chapter-heading {
+  font-size: 0.8em;
+}
+
+.verse-partial {
+  padding-left: 50px;
+}
+
+.quoted-section {
+  padding-left: 32px;
 }
