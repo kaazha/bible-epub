@@ -2,7 +2,12 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 
-const host = "localhost";
+let host = 'localhost';
+if (process.argv.length > 2) {
+  host = process.argv[2];
+} 
+
+//const host = "192.168.0.5"; //"localhost";
 const port = 8000;
 
 function getContentType(fileName) {
