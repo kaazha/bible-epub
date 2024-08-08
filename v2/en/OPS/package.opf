@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="KazAmharicBible" prefix="cc: http://creativecommons.org/ns#">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title id="title">መጽሓፍ ቅዱስ</dc:title>
+    <meta refines="#title" property="title-type">main</meta>
+    <dc:creator id="creator">Kaz Hailegabriel</dc:creator>
+    <meta refines="#creator" property="file-as">HAILEGABRIEL, KAZ</meta>
+    <meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
+    <dc:identifier id="pub-id">code.thebibleinamharic.com.amharicbible</dc:identifier>
+    <dc:language>en-US</dc:language>
+    <meta property="dcterms:modified">5/8/2023 8:09:03 PM</meta>
+    <dc:publisher>TheBibleInAmharic</dc:publisher>
+    <dc:contributor id="contrib1">Kaz H.</dc:contributor>
+    <meta refines="#contrib1" property="role" scheme="marc:relators">mrk</meta>
+    <dc:rights>This work is shared with the public using the Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0) license.</dc:rights>
+    <link rel="cc:license" href="https://github.com/kaz-LA/amharic-bible/blob/master/LICENSE"/>
+    <meta property="cc:attributionURL">https://github.com/kaz-LA/amharic-bible</meta>
+  </metadata>
+  <manifest>
+    <item id="Tera-Regular" href="fonts/Tera-Regular.woff2" media-type="font/woff2"/>
+    <item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml"/>
+    <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>
+    <item id="cover-image" properties="cover-image" href="images/cover.jpg" media-type="image/jpeg"/>
+    <!-- <item id="style2" href="css/stylesheet.css" media-type="text/css"/> -->
+    <item id="style" href="css/style.css" media-type="text/css"/>
+    <item id="image" href="chapter.png" media-type="image/png" />
+    <item id="genesis" href="OT/01_Genesis.xhtml" media-type="application/xhtml+xml" />
+    <item id="exodus" href="OT/02_Exodus.xhtml" media-type="application/xhtml+xml" />
+    <item id="leviticus" href="OT/03_Leviticus.xhtml" media-type="application/xhtml+xml" />
+    <item id="numbers" href="OT/04_Numbers.xhtml" media-type="application/xhtml+xml" />
+    <item id="deuteronomy" href="OT/05_Deuteronomy.xhtml" media-type="application/xhtml+xml" />
+    <item id="joshua" href="OT/06_Joshua.xhtml" media-type="application/xhtml+xml" />
+    <item id="judges" href="OT/07_Judges.xhtml" media-type="application/xhtml+xml" />
+    <item id="ruth" href="OT/08_Ruth.xhtml" media-type="application/xhtml+xml" />
+    <item id="samuel1" href="OT/09_1Samuel.xhtml" media-type="application/xhtml+xml" />
+    <item id="samuel2" href="OT/10_2Samuel.xhtml" media-type="application/xhtml+xml" />
+    <item id="kings1" href="OT/11_1Kings.xhtml" media-type="application/xhtml+xml" />
+    <item id="kings2" href="OT/12_2Kings.xhtml" media-type="application/xhtml+xml" />
+    <item id="chronicles1" href="OT/13_1Chronicles.xhtml" media-type="application/xhtml+xml" />
+    <item id="chronicles2" href="OT/14_2Chronicles.xhtml" media-type="application/xhtml+xml" />
+    <item id="ezra" href="OT/15_Ezra.xhtml" media-type="application/xhtml+xml" />
+    <item id="nehemiah" href="OT/16_Nehemiah.xhtml" media-type="application/xhtml+xml" />
+    <item id="esther" href="OT/17_Esther.xhtml" media-type="application/xhtml+xml" />
+    <item id="job" href="OT/18_Job.xhtml" media-type="application/xhtml+xml" />
+    <item id="psalms" href="OT/19_Psalms.xhtml" media-type="application/xhtml+xml" />
+    <item id="proverbs" href="OT/20_Proverbs.xhtml" media-type="application/xhtml+xml" />
+    <item id="ecclesiastes" href="OT/21_Ecclesiastes.xhtml" media-type="application/xhtml+xml" />
+    <item id="songofsolomon" href="OT/22_SongofSolomon.xhtml" media-type="application/xhtml+xml" />
+    <item id="isaiah" href="OT/23_Isaiah.xhtml" media-type="application/xhtml+xml" />
+    <item id="jeremiah" href="OT/24_Jeremiah.xhtml" media-type="application/xhtml+xml" />
+    <item id="lamentations" href="OT/25_Lamentations.xhtml" media-type="application/xhtml+xml" />
+    <item id="ezekiel" href="OT/26_Ezekiel.xhtml" media-type="application/xhtml+xml" />
+    <item id="daniel" href="OT/27_Daniel.xhtml" media-type="application/xhtml+xml" />
+    <item id="hosea" href="OT/28_Hosea.xhtml" media-type="application/xhtml+xml" />
+    <item id="joel" href="OT/29_Joel.xhtml" media-type="application/xhtml+xml" />
+    <item id="amos" href="OT/30_Amos.xhtml" media-type="application/xhtml+xml" />
+    <item id="obadiah" href="OT/31_Obadiah.xhtml" media-type="application/xhtml+xml" />
+    <item id="jonah" href="OT/32_Jonah.xhtml" media-type="application/xhtml+xml" />
+    <item id="micah" href="OT/33_Micah.xhtml" media-type="application/xhtml+xml" />
+    <item id="nahum" href="OT/34_Nahum.xhtml" media-type="application/xhtml+xml" />
+    <item id="habakkuk" href="OT/35_Habakkuk.xhtml" media-type="application/xhtml+xml" />
+    <item id="zephaniah" href="OT/36_Zephaniah.xhtml" media-type="application/xhtml+xml" />
+    <item id="haggai" href="OT/37_Haggai.xhtml" media-type="application/xhtml+xml" />
+    <item id="zechariah" href="OT/38_Zechariah.xhtml" media-type="application/xhtml+xml" />
+    <item id="malachi" href="OT/39_Malachi.xhtml" media-type="application/xhtml+xml" />
+    <item id="matthew" href="NT/40_Matthew.xhtml" media-type="application/xhtml+xml" />
+    <item id="mark" href="NT/41_Mark.xhtml" media-type="application/xhtml+xml" />
+    <item id="luke" href="NT/42_Luke.xhtml" media-type="application/xhtml+xml" />
+    <item id="john" href="NT/43_John.xhtml" media-type="application/xhtml+xml" />
+    <item id="acts" href="NT/44_Acts.xhtml" media-type="application/xhtml+xml" />
+    <item id="romans" href="NT/45_Romans.xhtml" media-type="application/xhtml+xml" />
+    <item id="corinthians1" href="NT/46_1Corinthians.xhtml" media-type="application/xhtml+xml" />
+    <item id="corinthians2" href="NT/47_2Corinthians.xhtml" media-type="application/xhtml+xml" />
+    <item id="galatians" href="NT/48_Galatians.xhtml" media-type="application/xhtml+xml" />
+    <item id="ephesians" href="NT/49_Ephesians.xhtml" media-type="application/xhtml+xml" />
+    <item id="philippians" href="NT/50_Philippians.xhtml" media-type="application/xhtml+xml" />
+    <item id="colossians" href="NT/51_Colossians.xhtml" media-type="application/xhtml+xml" />
+    <item id="thessalonians1" href="NT/52_1Thessalonians.xhtml" media-type="application/xhtml+xml" />
+    <item id="thessalonians2" href="NT/53_2Thessalonians.xhtml" media-type="application/xhtml+xml" />
+    <item id="timothy1" href="NT/54_1Timothy.xhtml" media-type="application/xhtml+xml" />
+    <item id="timothy2" href="NT/55_2Timothy.xhtml" media-type="application/xhtml+xml" />
+    <item id="titus" href="NT/56_Titus.xhtml" media-type="application/xhtml+xml" />
+    <item id="philemon" href="NT/57_Philemon.xhtml" media-type="application/xhtml+xml" />
+    <item id="hebrews" href="NT/58_Hebrews.xhtml" media-type="application/xhtml+xml" />
+    <item id="james" href="NT/59_James.xhtml" media-type="application/xhtml+xml" />
+    <item id="peter1" href="NT/60_1Peter.xhtml" media-type="application/xhtml+xml" />
+    <item id="peter2" href="NT/61_2Peter.xhtml" media-type="application/xhtml+xml" />
+    <item id="john1" href="NT/62_1John.xhtml" media-type="application/xhtml+xml" />
+    <item id="john2" href="NT/63_2John.xhtml" media-type="application/xhtml+xml" />
+    <item id="john3" href="NT/64_3John.xhtml" media-type="application/xhtml+xml" />
+    <item id="jude" href="NT/65_Jude.xhtml" media-type="application/xhtml+xml" />
+    <item id="revelation" href="NT/66_Revelation.xhtml" media-type="application/xhtml+xml" />
+  </manifest>
+  <spine>
+    <itemref linear="yes" idref="genesis" />
+    <itemref linear="yes" idref="exodus" />
+    <itemref linear="yes" idref="leviticus" />
+    <itemref linear="yes" idref="numbers" />
+    <itemref linear="yes" idref="deuteronomy" />
+    <itemref linear="yes" idref="joshua" />
+    <itemref linear="yes" idref="judges" />
+    <itemref linear="yes" idref="ruth" />
+    <itemref linear="yes" idref="samuel1" />
+    <itemref linear="yes" idref="samuel2" />
+    <itemref linear="yes" idref="kings1" />
+    <itemref linear="yes" idref="kings2" />
+    <itemref linear="yes" idref="chronicles1" />
+    <itemref linear="yes" idref="chronicles2" />
+    <itemref linear="yes" idref="ezra" />
+    <itemref linear="yes" idref="nehemiah" />
+    <itemref linear="yes" idref="esther" />
+    <itemref linear="yes" idref="job" />
+    <itemref linear="yes" idref="psalms" />
+    <itemref linear="yes" idref="proverbs" />
+    <itemref linear="yes" idref="ecclesiastes" />
+    <itemref linear="yes" idref="songofsolomon" />
+    <itemref linear="yes" idref="isaiah" />
+    <itemref linear="yes" idref="jeremiah" />
+    <itemref linear="yes" idref="lamentations" />
+    <itemref linear="yes" idref="ezekiel" />
+    <itemref linear="yes" idref="daniel" />
+    <itemref linear="yes" idref="hosea" />
+    <itemref linear="yes" idref="joel" />
+    <itemref linear="yes" idref="amos" />
+    <itemref linear="yes" idref="obadiah" />
+    <itemref linear="yes" idref="jonah" />
+    <itemref linear="yes" idref="micah" />
+    <itemref linear="yes" idref="nahum" />
+    <itemref linear="yes" idref="habakkuk" />
+    <itemref linear="yes" idref="zephaniah" />
+    <itemref linear="yes" idref="haggai" />
+    <itemref linear="yes" idref="zechariah" />
+    <itemref linear="yes" idref="malachi" />
+    <itemref linear="yes" idref="matthew" />
+    <itemref linear="yes" idref="mark" />
+    <itemref linear="yes" idref="luke" />
+    <itemref linear="yes" idref="john" />
+    <itemref linear="yes" idref="acts" />
+    <itemref linear="yes" idref="romans" />
+    <itemref linear="yes" idref="corinthians1" />
+    <itemref linear="yes" idref="corinthians2" />
+    <itemref linear="yes" idref="galatians" />
+    <itemref linear="yes" idref="ephesians" />
+    <itemref linear="yes" idref="philippians" />
+    <itemref linear="yes" idref="colossians" />
+    <itemref linear="yes" idref="thessalonians1" />
+    <itemref linear="yes" idref="thessalonians2" />
+    <itemref linear="yes" idref="timothy1" />
+    <itemref linear="yes" idref="timothy2" />
+    <itemref linear="yes" idref="titus" />
+    <itemref linear="yes" idref="philemon" />
+    <itemref linear="yes" idref="hebrews" />
+    <itemref linear="yes" idref="james" />
+    <itemref linear="yes" idref="peter1" />
+    <itemref linear="yes" idref="peter2" />
+    <itemref linear="yes" idref="john1" />
+    <itemref linear="yes" idref="john2" />
+    <itemref linear="yes" idref="john3" />
+    <itemref linear="yes" idref="jude" />
+    <itemref linear="yes" idref="revelation" />
+  </spine>
+</package>
