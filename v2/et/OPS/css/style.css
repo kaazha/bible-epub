@@ -1,9 +1,10 @@
-﻿body {
+﻿/*body {
     width: 60%;
     margin: 0 auto;
     background-color: #0c0c0c;
     color: #aaa;
 }
+*/
 
 .verse {
   display: inline;
@@ -25,10 +26,10 @@
 }
 
 .poetic {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 8px;
 }
 
 .verse-lines {
@@ -40,9 +41,9 @@
 }
 
 h2 {
-    color: dodgerblue;
+  color: dodgerblue;
 }
 
 .first-verse {
-    transform: translate(-16px, 0);
+  transform: translate(-16px, 0);
 }
